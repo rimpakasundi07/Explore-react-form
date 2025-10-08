@@ -3,13 +3,16 @@ import React from "react";
 const SimpleForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("form submitted");
+    console.log(e.target.name.value);
+    console.log(e.target.email.value);
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Your Name" />
+        <input type="text" name="name" placeholder="Your Name" />
+        <br></br>
+        <input type="email" name="email" placeholder="Enter Your email" id="" />
         <br></br>
         <input type="submit" value="Submit" />
       </form>
