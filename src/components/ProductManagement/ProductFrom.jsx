@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductFrom = () => {
+const ProductFrom = ({ handleAddProduct }) => {
   const handleProductSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -14,7 +14,8 @@ const ProductFrom = () => {
       price,
       quantity,
     };
-    console.log(newProduct);
+    // console.log(newProduct);
+    handleAddProduct(newProduct);
   };
   return (
     <div>
