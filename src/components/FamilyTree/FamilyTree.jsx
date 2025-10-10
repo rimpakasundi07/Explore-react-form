@@ -17,3 +17,9 @@ const FamilyTree = () => {
 };
 
 export default FamilyTree;
+
+/**
+ *
+ * 1. create a context using createContext with a default value make sure
+ * you are export the context to be used in other files
+ */
